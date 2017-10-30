@@ -5,7 +5,8 @@
 header {
   position: fixed;
   background-color: #f4b597;
-  width: 100%; }
+  width: 100%;
+  top: 0; }
 
 #logo {
   float: left;
@@ -14,17 +15,17 @@ header {
 
 div.row {
   width: 100%;
-  height: 50px;
+  height: 30px;
   text-align: center; }
 
 nav.nav {
   text-align: center;
   color: white;
-  line-height: 50px;
+  line-height: 60px;
   margin-right: 136px; }
 
 .nav a {
-  font-size: 18px;
+  font-size: 19px;
   padding: 30px;
   font-family: "Perpetua Titling MT"; }
 
@@ -45,5 +46,34 @@ body {
 img {
   width: 100%;
   margin-top: 0px; }
+
+@media only screen and (max-width: 500px) {
+  header {
+    height: 70px;
+    text-align: center;
+    margin: 0px; }
+
+  .nav a {
+    padding: 5px;
+    font-size: 14px;
+    text-align: center; }
+
+  body {
+    margin-top: 90px; }
+
+  nav.nav {
+    width: 100%;
+    height: 30px; }
+
+  #logo {
+    padding: 0px;
+    height: 80%;
+    margin-left: 15px; } }
+@media only screen and (max-width: 920px) {
+  header {
+    height: 100px; }
+
+  body {
+    margin-top: 90px; } }
 
 /*# sourceMappingURL=styles.css.map */
