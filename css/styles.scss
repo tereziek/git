@@ -39,12 +39,12 @@ nav.nav {
   margin-bottom: 5px;
 }
 
-nav.nav a, div.newlogo a, a:visited, a:active {
+nav.nav a, div.newlogo a, a:visited {
   color: white;
   text-decoration: none;
 }
 
-div.newlogo a:hover, nav.nav a:hover {
+div.newlogo a:hover, nav.nav a:hover, a:active {
   text-decoration: none;
   color: #cc7f59;
 }
@@ -63,17 +63,21 @@ img {
     margin-top: 3px;
 }
 
+.img1 .img2 {
+  width: 100%;
+}
 
 /* --DESKTOP-- */
 @media screen and (min-width: 1000px) {
   body {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
     grid-template-areas: "newlogo nav nav"
                           "box1 box1 box1"
                           "box2 box2 box2"
-                          "box3 box3 box3";
+                          "box3 box3 box3"
+  "box4 box4 box4";
   }
 
   .newlogo {
@@ -86,14 +90,21 @@ img {
 
   .box1 {
     grid-area: box1;
+
   }
 
   .box2 {
     grid-area: box2;
+
   }
 
   .box3 {
     grid-area: box3;
+
+  }
+
+  .box4 {
+    grid-area: box4;
   }
 
 }
@@ -187,6 +198,8 @@ img {
 
   }
 }
+
+
 
 
 
