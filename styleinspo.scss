@@ -11,13 +11,13 @@ header {
   text-align: center;
 }
 
+
 #logo {
   float: left;
   padding: 0px;
-  margin-left: 15px;
-  font-size: 25px;
-  text-align: center;
-  margin-top: 15px;
+  margin-left: 20px;
+  width: 100px;
+  height: 70px;
 }
 
 
@@ -25,26 +25,26 @@ header {
 nav.nav {
   text-align: center;
   color: white;
-  height: 50px;
+  height: 60px;
   margin-top: 5px;
-  line-height: 50px;
+  line-height: 60px;
   margin-left: 0px;
-  margin-right: 190px;
+  margin-right: 140px;
 }
 
 .nav a {
-  font-size: 19px;
+  font-size: 20px;
   padding: 28px;
   font-family: "Perpetua Titling MT";
   margin-bottom: 5px;
 }
 
-nav.nav a, div.newlogo a, a:visited {
+nav.nav a, div.newlogo a, a:active {
   color: white;
   text-decoration: none;
 }
 
-div.newlogo a:hover, nav.nav a:hover, a:active {
+div.newlogo a:hover, nav.nav a:hover, a:visited {
   text-decoration: none;
   color: #cc7f59;
 }
@@ -56,6 +56,11 @@ nav.nav span {
 body {
   background-color: #f4b597;
 
+}
+
+.newlogo img {
+  width: 100%;
+  margin-top: 3px;
 }
 
 
