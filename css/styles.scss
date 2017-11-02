@@ -113,7 +113,7 @@ img {
 /*---FOR iPAD---*/
 @media only screen and (max-width: 1035px) {
   header {
-    height: 80px;
+    height: 130px;
   }
   body {
     margin-top: 80px;
@@ -121,12 +121,13 @@ img {
 
   .newlogo {
     margin-top: 10px;
+    height: 60px;
   }
 
   nav.nav {
     margin-right: 0px;
     margin-top: 0px;
-    height: 80px;
+    height: 50px;
   }
 
   .nav a {
@@ -135,6 +136,14 @@ img {
 
   #logo {
     float: none;
+
+  }
+
+  .newlogo img {
+    width: 100px;
+    margin-top: 0px;
+    top: 0;
+    margin-bottom: 0px;
   }
 }
 
@@ -159,17 +168,18 @@ img {
     }
 
     header {
-      line-height: 70px;
+      line-height: 60px;
+      height: 95px;
     }
 
     #logo {
       text-align: center;
       margin: 0px;
-      font-size: 20px;
+
     }
     .newlogo {
       grid-area: newlogo;
-      height: 40px;
+      height: 50px;
       margin-top: 0px;
     }
 
