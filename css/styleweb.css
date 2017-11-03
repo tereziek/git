@@ -1,0 +1,235 @@
+* {
+    font-family: "Perpetua Titling MT";
+    color: #cc7f59;
+}
+
+.aboutbetter{
+    background: url("../webimages/backbroundkvet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+
+}
+
+.contact{
+    background: url("../webimages/backbroundkvet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;}
+
+*{box-sizing: border-box;}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    margin-top: 50px;
+}
+
+header {
+    position: fixed;
+    margin-bottom: 60px;
+    background-color: #f4b597;
+    width: 100%;
+    top: 0;
+    text-align: center;
+
+}
+Header {
+    grid-area: Header;
+
+}
+
+#logo {
+    float: left;
+    padding: 0px;
+    margin-left: 25px;
+    width: 100px;
+    height: 70px;
+}
+
+.newlogo img {
+    width: 100%;
+    height: 100%;
+    margin-top: 3px;
+     }
+
+
+
+nav.nav {
+    text-align: center;
+    color: white;
+    height: 50px;
+    margin-top: 10px;
+    line-height: 50px;
+    margin-left: 0px;
+    margin-right: 140px;
+}
+
+.nav a {
+    font-size: 20px;
+    padding: 25px;
+    font-family: "Perpetua Titling MT";
+
+}
+
+nav.nav a, div.newlogo a, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+div.newlogo a:hover, nav.nav a:hover {
+    text-decoration: none;
+    color: #cc7f59;
+}
+
+nav.nav span {
+    font-size: 20px;
+    color: white;
+}
+
+
+.text-container{
+    height: 400px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20%;
+}
+
+.text{
+    height: 50%;
+    float: left;
+    margin-left: 8%;
+
+}
+.text2 {
+    height: 50%;
+    float: right;
+    margin-left: 20%;
+    margin-right: 8%;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1035px) {
+    header {
+        height: 130px;
+    }
+    body {
+        margin-top: 80px;
+    }
+
+    .newlogo {
+        margin-top: 10px;
+        height: 60px;
+    }
+
+    nav.nav {
+        margin-right: 0px;
+        margin-top: 0px;
+        height: 50px;
+    }
+
+    .nav a {
+        padding: 10px;
+    }
+
+    #logo {
+        float: none;
+
+    }
+
+    .newlogo img {
+        width: 100px;
+        margin-top: 0px;
+        top: 0;
+        margin-bottom: 0px;
+    }
+
+    .text {
+        margin-left: 25%;
+        height: 200px;
+        float: none;
+    }
+
+    .text2 {
+        margin-left: 25%;
+        float: none;
+        margin-top: 50px;
+    }
+
+    .text-container {
+        height: 100%;
+        text-align: left;
+        margin-top: 30%;
+
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 755px) {
+    header {
+        height: 95px;
+        line-height: 60px;
+    }
+    body {
+        margin-top: 80px;
+    }
+
+    .newlogo {
+        margin-top: 0px;
+        height: 60px;
+        margin-right: 15px;
+    }
+
+    nav.nav {
+        margin-right: 0px;
+        margin-top: 0px;
+        height: 50px;
+        width: 100%;
+    }
+
+    .nav a {
+        padding: 3px;
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    #logo {
+        float: none;
+
+    }
+
+    .newlogo img {
+        width: 100px;
+        height: 71px;
+        margin-top: 0px;
+        top: 0;
+        margin-bottom: 0px;
+    }
+
+    .text {
+        margin: 0px;
+
+    }
+
+    .text2 {
+        margin-top: 60%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+
+

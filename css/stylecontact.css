@@ -1,0 +1,171 @@
+* {
+  font-family: "Perpetua Titling MT";
+  color: white; }
+
+body.contact {
+  background: url("../webimages/backbroundkvet.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%; }
+
+header {
+  position: fixed;
+  background-color: #f4b597;
+  width: 100%;
+  top: 0;
+  text-align: center; }
+
+#logo {
+  float: left;
+  padding: 0px;
+  margin-left: 20px;
+  width: 100px;
+  height: 70px; }
+
+nav.nav {
+  text-align: center;
+  color: white;
+  height: 60px;
+  margin-top: 5px;
+  line-height: 60px;
+  margin-left: 0px;
+  margin-right: 140px; }
+
+.nav a {
+  font-size: 20px;
+  padding: 28px;
+  font-family: "Perpetua Titling MT";
+  margin-bottom: 5px; }
+
+nav.nav a, div.newlogo a, a:active {
+  color: white;
+  text-decoration: none; }
+
+div.newlogo a:hover, nav.nav a:hover, a:visited {
+  text-decoration: none;
+  color: #cc7f59; }
+
+nav.nav span {
+  font-size: 20px; }
+
+body {
+  background-color: #f4b597; }
+
+img {
+  width: 100%;
+  margin-top: 3px; }
+
+p {
+  color: #f4b597; }
+
+/* --DESKTOP-- */
+@media screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: repeat(3, 33.3% 33.3% 33.3%);
+    grid-template-areas: "newlogo nav nav" "adress map map" "adress map map"; }
+
+  .newlogo {
+    grid-area: newlogo; }
+
+  .nav {
+    grid-area: nav; }
+
+  .map {
+    grid-area: map;
+    margin-top: 100px; }
+
+  .adress {
+    grid-area: adress;
+    margin-top: 240px;
+    margin-left: 50px;
+    font-size: 30px; } }
+/*---FOR iPAD---*/
+@media only screen and (max-width: 1035px) {
+  header {
+    height: 130px; }
+
+  body {
+    margin-top: 80px; }
+
+  .newlogo {
+    margin-top: 10px;
+    height: 60px; }
+
+  nav.nav {
+    margin-right: 0px;
+    margin-top: 0px;
+    height: 50px; }
+
+  .nav a {
+    padding: 10px; }
+
+  #logo {
+    float: none; }
+
+  .newlogo img {
+    width: 100px;
+    margin-top: 0px;
+    top: 0;
+    margin-bottom: 0px; }
+
+  .map {
+    grid-area: map;
+    margin-top: 100px; }
+
+  .adress {
+    grid-area: adress;
+    margin-top: 240px;
+    margin-left: 30px;
+    font-size: 20px; } }
+/* --MOBILE-- */
+@supports (grid-area: auto) {
+  @media screen and (max-width: 600px) {
+    body {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(4, 25% 25% 25% 25%);
+      grid-template-areas: "newlogo" "mynav" "map" "adress"; }
+
+    header {
+      line-height: 60px;
+      height: 95px; }
+
+    #logo {
+      text-align: center;
+      margin: 0px; }
+
+    .newlogo {
+      grid-area: newlogo;
+      height: 50px;
+      margin-top: 0px; }
+
+    .mynav {
+      grid-area: mynav;
+      height: 25px; }
+
+    .nav a {
+      padding: 5px;
+      font-size: 15px;
+      text-align: center; }
+
+    nav.nav {
+      height: 30px;
+      margin-left: 0px;
+      margin-right: 13px; }
+
+    .map {
+      grid-area: map;
+      margin-top: 100px;
+      margin-bottom: 0px; }
+
+    .adress {
+      grid-area: adress;
+      margin-top: 40px;
+      font-size: 15px;
+      margin-left: 33.3%; } } }
+
+/*# sourceMappingURL=stylecontact.css.map */

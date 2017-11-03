@@ -1,0 +1,206 @@
+* {
+  font-family: "Perpetua Titling MT";
+  color: white; }
+
+header {
+  position: fixed;
+  background-color: #f4b597;
+  width: 100%;
+  top: 0;
+  text-align: center; }
+
+#logo {
+  float: left;
+  padding: 0px;
+  margin-left: 20px;
+  width: 100px;
+  height: 70px; }
+
+nav.nav {
+  text-align: center;
+  color: white;
+  height: 60px;
+  margin-top: 5px;
+  line-height: 60px;
+  margin-left: 0px;
+  margin-right: 140px; }
+
+.nav a {
+  font-size: 20px;
+  padding: 28px;
+  font-family: "Perpetua Titling MT";
+  margin-bottom: 5px; }
+
+nav.nav a, div.newlogo a, a:active {
+  color: white;
+  text-decoration: none; }
+
+div.newlogo a:hover, nav.nav a:hover, a:visited {
+  text-decoration: none;
+  color: #cc7f59; }
+
+nav.nav span {
+  font-size: 20px; }
+
+body {
+  background-color: #f4b597; }
+
+.newlogo img {
+  width: 100%;
+  margin-top: 3px; }
+
+/*--FOR iPAD--*/
+@media only screen and (max-width: 1035px) {
+  header {
+    height: 130px; }
+
+  body {
+    margin-top: 80px; }
+
+  .newlogo {
+    margin-top: 10px;
+    height: 60px; }
+
+  nav.nav {
+    margin-right: 0px;
+    margin-top: 0px;
+    height: 50px; }
+
+  .nav a {
+    padding: 10px; }
+
+  #logo {
+    float: none; }
+
+  img {
+    width: 100%; }
+
+  .newlogo img {
+    width: 100px;
+    margin-top: 0px;
+    top: 0;
+    margin-bottom: 0px; } }
+/* --DESKTOP product-- */
+@media screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(7, 14.28%);
+    grid-template-areas: "newlogo nav nav nav" "img9 img9 img9 img9" "img14 img14 img13 img13" "img10 img10 img10 img10" "img11 img11 img12 img12" "img15 img15 img15 img15" "img16 img16 img16 img16";
+    margin-top: 20px; }
+
+  .newlogo {
+    grid-area: newlogo; }
+
+  .nav {
+    grid-area: nav; }
+
+  .img9 {
+    grid-area: img9;
+    width: 100%;
+    margin-bottom: 3px; }
+
+  .img10 {
+    grid-area: img10;
+    width: 100%;
+    margin-bottom: 3px; }
+
+  .img11 {
+    grid-area: img11;
+    margin-right: 50%;
+    width: 100%; }
+
+  .img12 {
+    grid-area: img12;
+    width: 100%;
+    margin-left: 2px;
+    margin-bottom: 3px; }
+
+  .img13 {
+    grid-area: img13;
+    width: 100%;
+    margin-bottom: 3px;
+    margin-left: 2px; }
+
+  .img14 {
+    grid-area: img14;
+    margin-right: 50%;
+    width: 100%;
+    margin-bottom: 3px; }
+
+  .img15 {
+    grid-area: img15;
+    width: 100%;
+    margin-bottom: 3px; }
+
+  .img16 {
+    grid-area: img16;
+    width: 100%; } }
+/* --MOBILE-- */
+@supports (grid-area: auto) {
+  @media screen and (max-width: 500px) {
+    body {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(9, 11.11%);
+      grid-template-areas: "newlogo" "mynav" "img9" "img14" "img13" "img10" "img11" "img12" "img15" "img16"; }
+
+    header {
+      line-height: 60px;
+      height: 95px; }
+
+    #logo {
+      text-align: center;
+      margin: 0px; }
+
+    .newlogo {
+      grid-area: newlogo;
+      height: 50px;
+      margin-top: 0px; }
+
+    .mynav {
+      grid-area: mynav;
+      height: 25px; }
+
+    .nav a {
+      padding: 5px;
+      font-size: 15px;
+      text-align: center; }
+
+    nav.nav {
+      height: 30px;
+      margin-left: 0px;
+      margin-right: 13px; }
+
+    .img9 {
+      grid-area: img9;
+      margin-bottom: 3px; }
+
+    .img10 {
+      grid-area: img10;
+      margin-bottom: 3px; }
+
+    .img11 {
+      grid-area: img11;
+      margin-bottom: 3px; }
+
+    .img12 {
+      grid-area: img12;
+      margin-bottom: 3px; }
+
+    .img13 {
+      grid-area: img13;
+      margin-bottom: 3px; }
+
+    .img14 {
+      grid-area: img14;
+      margin-bottom: 3px; }
+
+    .img15 {
+      grid-area: img15;
+      margin-bottom: 3px; }
+
+    .img16 {
+      grid-area: img16; } } }
+
+/*# sourceMappingURL=styleproducts.css.map */
